@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Власта Шараватова](https://up.htmlacademy.ru/adaptive/22/user/112640).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Беллавин](https://htmlacademy.ru/profile/bellavin).
 
 ---
 
