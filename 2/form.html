@@ -8,17 +8,19 @@
 </head>
 
 <body class="page__body page">
-  <header class="page-header">
-    <a class="page-header__logo">
-      <img src="img/main-logo-mobile.svg" width="102" height="84" alt="«Логотип Седона»">
-    </a>
+  <header class="page-header main-nav">
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
     </nav>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a>
+          <a class="page-header__logo">
+            <img src="img/main-logo-mobile.svg" width="102" height="84" alt="«Логотип Седона»">
+          </a>
+        </li>
+        <li class="main-nav__item">
+          <a href="index.html">
             Главная
           </a>
         </li>
@@ -28,7 +30,7 @@
           </a>
         </li>
         <li class="main-nav__item">
-          <a href="form.html">
+          <a>
             Форма отзыва
           </a>
         </li>
@@ -41,23 +43,31 @@
     </div>
   </header>
   <main class="page-main__form">
+    <section class="banner">
+      <div class="banner__intro">
+        <img src="img/back-desktop-form.jpg" width="901" height="389" alt="Фото Седоны">
+      </div>
+    </section>
+
+    <section class="intro">
+      <div class="intro__wrapper">
+        <h2 class="intro__slogan">
+          Оставьте свой отзыв
+        </h2>
+        <p class="intro__text">
+          Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+          достопримечательностях
+        </p>
+      </div>
+    </section>
+
     <section class="review">
       <div class="review__wrapper">
-        <div class="review__intro">
-          <img src="img/back-desktop-form.jpg" width="901" height="389" alt="Фото Седоны">
-        </div>
-
         <h2 class="visually-hidden">
           Форма отправки формы отзыва
         </h2>
         <form class="review__form" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset class="review__info">
-            <legend class="review__title">
-              Оставьте свой отзыв
-
-              Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
-              достопримечательностях
-            </legend>
 
             <div class="review__filter">
               <h2 class="review__subtitle">
@@ -215,38 +225,39 @@
 
   </footer>
 
-  
 
-    <div class="popup popup--submit">
-      <div class="popup__wrapper">
-        <p class="popup__title">
-          Ваш отзыв отправлен!
-        </p>
-        <p class="popup__text">
-          Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте
-        </p>
-      </div>
 
-      <div class="popup__button-wrapper">
-        <button class="popup__button popup__button--submit button" type="button" aria-label="Закрыть окно">Закрыть окно</button>
-      </div>
+  <div class="popup popup--submit">
+    <div class="popup__wrapper">
+      <p class="popup__title">
+        Ваш отзыв отправлен!
+      </p>
+      <p class="popup__text">
+        Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте
+      </p>
     </div>
 
-
-    <div class="popup popup--error">
-      <div class="popup__wrapper">
-        <p class="popup__title">
-          Что-то пошло не так!
-        </p>
-        <p class="popup__text">
-          Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-        </p>
-      </div>
-
-      <div class="popup__button-wrapper">
-        <button class="popup__button popup__button--error button" type="button" aria-label="Закрыть окно">Oк</button>
-      </div>
+    <div class="popup__button-wrapper">
+      <button class="popup__button popup__button--submit button" type="button" aria-label="Закрыть окно">Закрыть
+        окно</button>
     </div>
+  </div>
+
+
+  <div class="popup popup--error">
+    <div class="popup__wrapper">
+      <p class="popup__title">
+        Что-то пошло не так!
+      </p>
+      <p class="popup__text">
+        Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+      </p>
+    </div>
+
+    <div class="popup__button-wrapper">
+      <button class="popup__button popup__button--error button" type="button" aria-label="Закрыть окно">Oк</button>
+    </div>
+  </div>
 
 
 
