@@ -1,0 +1,15 @@
+.page {
+  min-height: 100%;
+  font-family: "PT Sans", "Tahoma", sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.page__body {
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: $white;
+  color: $black;
+}

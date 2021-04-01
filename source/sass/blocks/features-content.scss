@@ -1,0 +1,23 @@
+.features-content {
+  background-color: $white;
+  color: $black;
+}
+
+.features-content__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.features-content__title {
+  font-size: 21px;
+  line-height: 15px;
+  font-weight: 700;
+}
+
+.features-content__description {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+}
