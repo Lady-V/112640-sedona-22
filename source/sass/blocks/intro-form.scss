@@ -1,17 +1,19 @@
-.intro__wrapper {
+.intro-form {
   text-align: center;
 }
 
-.intro__slogan {
+.intro-form__slogan {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  color: $black;
   text-transform: uppercase;
 }
 
-.intro__text {
-  font-size: 18px;
-  line-height: 26px;
+.intro-form__text {
+  font-size: 14px;
+  line-height: 24px;
   font-weight: 400;
+  color: $black;
   text-transform: uppercase;
 }

@@ -1,0 +1,19 @@
+.social__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.social__list li:not(:last-child) {
+  margin-right: 6px;
+}
+
+.social__link {
+  width: 46px;
+  height: 48px;
+  background-color: $lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

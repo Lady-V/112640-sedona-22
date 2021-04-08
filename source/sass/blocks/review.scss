@@ -1,0 +1,72 @@
+.review__form fieldset {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  border: 0;
+}
+
+.review__subtitle {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $black;
+  text-align: center;
+}
+
+.review__text {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: $greydark;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+
+.review__input {
+  background-color: $lightgrey;
+  border: none;
+}
+
+.review__input--name {
+  width: 230px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 22px;
+}
+
+.review__input--surname {
+  width: 194px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 22px;
+}
+
+.review__input--patronymic {
+  width: 192px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 22px;
+}
+
+.review__input placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $black;
+}
+
+.review__button {
+  width: 280px;
+  height: 58px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $white;
+  background-color: $lightblue;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  margin-left: 20px;
+  margin-bottom: 76px;
+}

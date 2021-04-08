@@ -1,4 +1,9 @@
-.features__blue {
+.features__wrapper {
+  text-align: center;
+}
+
+.features__header,
+.features__header-second {
   background-color: $lightblue;
 }
 
@@ -8,6 +13,7 @@
   font-weight: 700;
   color: $white;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .features__number {
@@ -24,4 +30,5 @@
   font-weight: 400;
   color: $white;
   text-transform: uppercase;
+  margin: 0;
 }

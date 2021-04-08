@@ -25,3 +25,28 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+
+// 320px — мобильная версия,
+// 768px — планшетная версия,
+// 1200px — десктопная версия.
+
+.wrapper {
+  box-sizing: border-box;
+  width: 320px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+}
+
+
+// @media (min-width: 768px) {
+//   .wrapper {
+//     width: 768px;
+//   }
+// }
+
+// @media (min-width: 1200px) {
+//   .wrapper {
+//     width: 1200px;
+//   }
+// }

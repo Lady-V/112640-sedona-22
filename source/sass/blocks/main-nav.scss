@@ -8,6 +8,7 @@
 }
 
 .main-nav__list {
+  display: block;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -18,3 +19,7 @@
   }
 }
 
+.main-nav__item {
+  box-shadow: rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
