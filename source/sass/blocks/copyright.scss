@@ -6,3 +6,9 @@
   text-transform: uppercase;
   padding-left: 80px;
 }
+
+@media (min-width: 768px) {
+  .copyright__info {
+    margin: 0 60px 0 0;
+  }
+}

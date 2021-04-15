@@ -1,7 +1,13 @@
-.map__link-mini {
+.map__link-mini img {
   display: block;
   text-align: center;
   width: 320px;
   padding-top: 49px;
   padding-bottom: 38px;
+}
+
+@media (min-width: 768px) {
+  .map__link-mini img {
+    padding-bottom: 36px;
+  }
 }

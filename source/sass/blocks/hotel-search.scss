@@ -1,8 +1,8 @@
 .hotel-search__wrapper {
+  padding-top: 33px;
   padding-left: 20px;
   padding-right: 20px;
 }
-
 
 .hotel-search__title {
   font-size: 21px;
@@ -31,4 +31,16 @@
   padding-bottom: 16px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .hotel-search__description {
+    padding-left: 167px;
+    margin: 0;
+  }
+
+  .hotel-search__button {
+    width: 458px;
+    margin-left: 155px;
+  }
 }

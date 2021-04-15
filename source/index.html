@@ -16,11 +16,6 @@
       </nav>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="main-nav__item main-nav__item--logo">
-            <a class="page-header__link">
-              <img src="img/main-logo-mobile.svg" width="102" height="84" alt="«Логотип Седона»">
-            </a>
-          </li>
           <li class="main-nav__item">
             <a>
               Главная
@@ -41,6 +36,16 @@
               HTML Academy
             </a>
           </li>
+          <li class="main-nav__item main-nav__item--logo">
+            <a class="main-nav__link">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+                <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+                <img src="img/main-logo-mobile.svg" width="102" height="84" alt="«Логотип Седона»">
+              </picture>
+            </a>
+          </li>
+
         </ul>
       </div>
     </header>
@@ -66,15 +71,17 @@
         <div class="features__wrapper">
 
           <div class="features__first">
-            <div class="features__header">
-              <h2 class="features__title">
-                Настоящий городок
-              </h2>
-              <p class="features__number">— №1 —</p>
-              <p class="features__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            </div>
-            <div class="features__photo">
-              <img src="img/photo-city.jpg" width="520" height="260" alt="Фото города">
+            <div class="features__block">
+              <div class="features__header">
+                <h2 class="features__title">
+                  Настоящий городок
+                </h2>
+                <p class="features__number">— №1 —</p>
+                <p class="features__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+              </div>
+              <div class="features__photo">
+                <img src="img/photo-city.jpg" width="520" height="260" alt="Фото города">
+              </div>
             </div>
 
             <div class="features-content">
@@ -102,43 +109,47 @@
           </div>
 
           <div class="features__second features__blue">
-            <div class="features__header-second">
-              <h2 class="features__title">
-                Там есть Мост дьявола
+            <div class="features__block">
+              <div class="features__header-second">
+                <h2 class="features__title">
+                  Там есть Мост дьявола
+                </h2>
+                <p class="features__number">— №2 —</p>
+                <p class="features__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              </div>
+              <div class="features__photo">
+                <img src="img/photo-bridge.jpg" width="520" height="260" alt="Фото Моста дьявола">
+              </div>
+            </div>
+          </div>
+
+          <div class="features__content-short">
+            <div class="features__third features-short">
+              <h2 class="features__title features-short__title">
+                Небольшая площадь
               </h2>
-              <p class="features__number">— №2 —</p>
-              <p class="features__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <p class="features__number features-short__number">— №3 —</p>
+              <p class="features__description features-short-description">Все интересные места находятся очень близко
+              </p>
             </div>
-            <div class="features__photo">
-              <img src="img/photo-bridge.jpg" width="520" height="260" alt="Фото Моста дьявола">
+
+            <div class="features__fourth features-short">
+              <h2 class="features__title features-short__title">
+                Красивая дорога
+              </h2>
+              <p class="features__number features-short__number">— №4 —</p>
+              <p class="features__description features-short-description">Ехать в Седону из Лас-Вегаса совсем не скучно!
+              </p>
             </div>
-          </div>
 
-          <div class="features__third features-short">
-            <h2 class="features__title features-short__title">
-              Небольшая площадь
-            </h2>
-            <p class="features__number features-short__number">— №3 —</p>
-            <p class="features__description features-short-description">Все интересные места находятся очень близко
-            </p>
-          </div>
-
-          <div class="features__fourth features-short">
-            <h2 class="features__title features-short__title">
-              Красивая дорога
-            </h2>
-            <p class="features__number features-short__number">— №4 —</p>
-            <p class="features__description features-short-description">Ехать в Седону из Лас-Вегаса совсем не скучно!
-            </p>
-          </div>
-
-          <div class="features__fifth features-short">
-            <h2 class="features__title features-short__title">
-              Мало туристов
-            </h2>
-            <p class="features__number features-short__number">— №5 —</p>
-            <p class="features__description features-short-description">Большинство едет в гранд каньон и толпится там
-            </p>
+            <div class="features__fifth features-short">
+              <h2 class="features__title features-short__title">
+                Мало туристов
+              </h2>
+              <p class="features__number features-short__number">— №5 —</p>
+              <p class="features__description features-short-description">Большинство едет в гранд каньон и толпится там
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -154,7 +165,11 @@
       <section class="map">
         <div class="map__wrapper">
           <a class="map__link-mini" href="#">
-            <img src="img/map-mobile.jpg" width="320" height="350" alt="Карта расположения Седоны">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/map-tablet.jpg">
+              <img src="img/map-mobile.jpg" width="320" height="350" alt="Карта расположения Седоны">
+            </picture>
           </a>
         </div>
       </section>

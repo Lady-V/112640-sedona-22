@@ -21,3 +21,17 @@
   line-height: 26px;
   font-weight: 400;
 }
+
+@media (min-width: 768px) {
+  .features-content__list {
+    display: flex;
+  }
+
+  .features-content__item:nth-child(2) {
+    order: 3;
+  }
+
+  .features-content__item:nth-child(3) {
+    order: 2;
+  }
+}

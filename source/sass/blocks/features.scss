@@ -5,6 +5,7 @@
 .features__header,
 .features__header-second {
   background-color: $lightblue;
+  padding: 39px 16px 35px 15px;
 }
 
 .features__title {
@@ -31,4 +32,49 @@
   color: $white;
   text-transform: uppercase;
   margin: 0;
+}
+
+.features__photo img {
+  display: block;
+}
+
+.features__third {
+  padding: 26px 26px 24px;
+}
+
+.features__fourth {
+  padding: 25px 41px 24px 42px;
+}
+
+.features__fifth {
+  padding: 25px 22px 24px;
+}
+
+@media (min-width: 768px) {
+  .features__block {
+    display: flex;
+  }
+
+  .features__header-second {
+    order: 2;
+  }
+
+  .features__content-short {
+    display: flex;
+  }
+}
+
+@media (min-width: 1200) {
+  .features__block {
+    padding-bottom: 159px;
+  }
+
+  .features__photo {
+    flex-grow: 2;
+  }
+
+  .features__header,
+  .features__header-second {
+    padding: 47px 52px 57px 53px;
+  }
 }
