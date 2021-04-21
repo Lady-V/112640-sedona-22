@@ -26,6 +26,10 @@
 .review__input {
   background-color: $lightgrey;
   border: none;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $black;
 }
 
 .review__input--name {
@@ -49,13 +53,6 @@
   padding-left: 22px;
 }
 
-.review__input placeholder {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  color: $black;
-}
-
 .review__button {
   width: 280px;
   height: 58px;
@@ -69,4 +66,57 @@
   text-align: center;
   margin-left: 20px;
   margin-bottom: 76px;
+}
+
+@media (min-width: 768px) {
+  .review__subtitle {
+    font-size: 21px;
+  }
+
+  .review__input--name {
+    width: 216px;
+    padding-top: 18px;
+    padding-bottom: 14px;
+    padding-left: 22px;
+  }
+
+  .review__input--surname {
+    width: 178px;
+    padding-top: 18px;
+    padding-bottom: 14px;
+    padding-left: 22px;
+  }
+
+  .review__input--patronymic {
+    width: 180px;
+    padding-top: 18px;
+    padding-bottom: 14px;
+    padding-left: 21px;
+  }
+
+  .review__info {
+    width: 50%;
+  }
+
+  .review__button {
+    width: 324px;
+    margin-left: 60px;
+  }
+
+  .review__necessarily {
+    padding-left: 150px;
+    padding-bottom: 97px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .review__button {
+    width: 480px;
+    margin-left: 120px;
+  }
+
+  .review__necessarily {
+    padding-left: 287px;
+    padding-bottom: 102px;
+  }
 }

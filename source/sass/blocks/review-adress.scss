@@ -24,11 +24,52 @@
   margin-left: 20px;
   padding-left: 22px;
   border: none;
-}
-
-placeholder {
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: $black;
+}
+
+@media (min-width: 768px) {
+  .review-adress {
+    width: 100%;
+    margin: 32px 0 14px;
+  }
+
+  .review-adress__title {
+    font-size: 21px;
+    padding-bottom: 21px;
+  }
+
+  .review-adress__text {
+    padding-bottom: 8px;
+  }
+
+  .review-adress input {
+    width: 648px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .review-adress {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .review-adress__number {
+    margin: 0;
+  }
+
+  .review-adress__mail {
+    margin: 0;
+  }
+
+  .review-adress input {
+    width: 257px;
+  }
+
+  .review-adress__input--mail {
+    width: 258px;
+  }
 }

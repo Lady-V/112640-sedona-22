@@ -1,14 +1,24 @@
+.copyright__info {
+  padding-left: 80px;
+  padding-bottom: 26px;
+}
+
 .copyright__text {
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
   color: $black;
   text-transform: uppercase;
-  padding-left: 80px;
 }
 
 @media (min-width: 768px) {
   .copyright__info {
     margin: 0 60px 0 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .copyright__info {
+    margin: 0 120px 0 0;
   }
 }

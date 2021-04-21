@@ -34,13 +34,27 @@
 }
 
 @media (min-width: 768px) {
+  .hotel-search__wrapper {
+    padding: 58px 155px 58px;
+  }
+
   .hotel-search__description {
-    padding-left: 167px;
+    padding-bottom: 37px;
     margin: 0;
   }
 
   .hotel-search__button {
     width: 458px;
-    margin-left: 155px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .hotel-search__wrapper {
+    padding: 58px 371px 66px;
+  }
+
+  .hotel-search__description {
+    padding-bottom: 42px;
+    margin: 0;
   }
 }

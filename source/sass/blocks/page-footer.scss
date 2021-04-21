@@ -16,7 +16,14 @@
   }
 
   .page-footer__hashtag p {
-    padding-left: 45px;
+    padding-left: 61px;
+    padding-top: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page-footer__hashtag p {
+    padding-left: 120px;
     padding-top: 12px;
   }
 }

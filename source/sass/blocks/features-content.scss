@@ -35,3 +35,15 @@
     order: 2;
   }
 }
+
+@media (min-width: 1200px) {
+  .features-content__list {
+    padding-left: 58px;
+    padding-right: 78px;
+  }
+
+  .features-content__item {
+    padding-top: 159px;
+    padding-bottom: 80px;
+  }
+}

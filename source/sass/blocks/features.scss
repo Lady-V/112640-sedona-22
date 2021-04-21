@@ -55,8 +55,23 @@
     display: flex;
   }
 
+  .features__header,
+  .features__header-second {
+    padding: 40px 32px 44px;
+  }
+
   .features__header-second {
     order: 2;
+  }
+
+  .features-content__list {
+    padding-left: 36px;
+    padding-right: 31px;
+  }
+
+  .features-content__item {
+    padding-top: 158px;
+    padding-bottom: 60px;
   }
 
   .features__content-short {

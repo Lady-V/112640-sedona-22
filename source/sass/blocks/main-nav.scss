@@ -72,6 +72,10 @@
     background-color: $white;
   }
 
+  .main-nav__item {
+    background-color: $white;
+  }
+
   .main-nav__item:nth-child(1) {
     order: 1;
     margin-right: 47px;
@@ -99,8 +103,4 @@
     order: 5;
     padding-top: 16px;
   }
-}
-
-@media (min-width: 1200) {
-  .main-nav {}
 }

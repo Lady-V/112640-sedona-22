@@ -20,3 +20,30 @@
   padding-left: 21px;
   padding-top: 13px;
 }
+
+
+@media (min-width: 768px) {
+  .review-description__info label {
+    font-size: 21px;
+    padding-left: 243px;
+  }
+
+  .review-description__info textarea {
+    width: 648px;
+    height: 160px;
+    margin-left: 60px;
+    margin-top: 54px;
+    margin-bottom: 58px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .review-description__info label {
+    padding-left: 459px;
+  }
+
+  .review-description__info textarea {
+    width: 960px;
+    margin-left: 120px;
+  }
+}

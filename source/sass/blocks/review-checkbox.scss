@@ -21,3 +21,37 @@
 .review-checkbox__list li:not(:last-child) {
   margin-bottom: 54px;
 }
+
+@media (min-width: 768px) {
+  .review-checkbox__title {
+    font-size: 21px;
+  }
+
+  .review-checkbox__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 520px;
+    margin: 0 auto;
+    padding: 42px 0 36px 60px;
+  }
+
+  .review-checkbox__item {
+    width: 50%;
+    margin: 0 auto 32px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .review-checkbox__list {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 960px;
+    margin: 0 auto;
+    padding: 42px 0 36px 60px;
+  }
+
+  .review-checkbox__item {
+    width: 100%;
+    margin: 0 auto 32px 0;
+  }
+}

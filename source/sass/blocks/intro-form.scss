@@ -17,3 +17,13 @@
   color: $black;
   text-transform: uppercase;
 }
+
+@media (min-width: 768px) {
+  .intro-form__wrapper {
+    padding: 64px 168px 60px 166px;
+  }
+
+  .intro-form__slogan {
+    font-size: 30px;
+  }
+}

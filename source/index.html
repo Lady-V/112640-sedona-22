@@ -49,11 +49,16 @@
         </ul>
       </div>
     </header>
+
     <main class="page-main">
       <section class="banner banner--main">
         <div class="banner__wrapper">
           <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
-          <img class="banner__image" src="img/back-mobile.jpg" width="901" height="389" alt="Фото Седоны">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/back-desktop.jpg">
+            <source media="(min-width: 768px)" srcset="img/back-desktop.jpg">
+            <img class="banner__image" src="img/back-mobile.jpg" width="901" height="389" alt="Фото Седоны">
+          </picture>
         </div>
       </section>
 
@@ -80,7 +85,11 @@
                 <p class="features__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
               </div>
               <div class="features__photo">
-                <img src="img/photo-city.jpg" width="520" height="260" alt="Фото города">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg">
+                  <img src="img/photo-city-mobile.jpg" width="520" height="260" alt="Фото города">
+                </picture>
               </div>
             </div>
 
@@ -118,7 +127,11 @@
                 <p class="features__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
               </div>
               <div class="features__photo">
-                <img src="img/photo-bridge.jpg" width="520" height="260" alt="Фото Моста дьявола">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg">
+                  <img src="img/photo-bridge-mobile.jpg" width="520" height="260" alt="Фото Моста дьявола">
+                </picture>
               </div>
             </div>
           </div>
