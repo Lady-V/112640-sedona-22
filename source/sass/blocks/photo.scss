@@ -34,8 +34,6 @@
   .photo__list {
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
   }
 
   .photo__item {
@@ -47,4 +45,10 @@
   .photo__link img {
     display: block;
   }
+}
+
+picture {
+  position: relative;
+  display: block;
+  overflow: hidden;
 }
