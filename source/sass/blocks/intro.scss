@@ -17,6 +17,7 @@
   line-height: 26px;
   font-weight: 400;
   text-transform: uppercase;
+  margin: 0;
 }
 
 @media (min-width: 768px) {
@@ -24,7 +25,6 @@
     width: 520px;
   }
 }
-
 
 @media (min-width: 1200) {
   .intro__wrapper {

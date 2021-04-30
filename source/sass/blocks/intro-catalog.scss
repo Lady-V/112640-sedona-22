@@ -19,5 +19,12 @@
 @media (min-width: 768px) {
   .intro-catalog__slogan {
     font-size: 30px;
+    margin: 65px 155px;
+  }
+
+  .intro-catalog__text {
+    padding-left: 155px;
+    padding-right: 155px;
+    padding-bottom: 65px;
   }
 }

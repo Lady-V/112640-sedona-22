@@ -11,33 +11,21 @@
 <body class="page__body page">
   <div class="page__wrapper wrapper">
     <header class="page-header main-nav">
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      </nav>
-      <div class="main-nav__wrapper">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <nav class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item">
-            <a>
+            <a class="main-nav__link" href="#">
               Главная
             </a>
           </li>
           <li class="main-nav__item">
-            <a href="catalog.html">
+            <a class="main-nav__link" href="catalog.html">
               Фото и видео
             </a>
           </li>
-          <li class="main-nav__item">
-            <a href="form.html">
-              Форма отзыва
-            </a>
-          </li>
-          <li class="main-nav__item">
-            <a href="#">
-              HTML Academy
-            </a>
-          </li>
           <li class="main-nav__item main-nav__item--logo">
-            <a class="main-nav__link">
+            <a class="main-nav__link" href="#">
               <picture>
                 <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
                 <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
@@ -45,9 +33,18 @@
               </picture>
             </a>
           </li>
-
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">
+              Форма отзыва
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--shadow" href="#">
+              HTML Academy
+            </a>
+          </li>
         </ul>
-      </div>
+      </nav>
     </header>
 
     <main class="page-main">

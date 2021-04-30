@@ -69,8 +69,19 @@
 }
 
 @media (min-width: 768px) {
+  .review__form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .review__subtitle {
     font-size: 21px;
+    padding-left: 5px;
+    margin: 0 0 54px 0;
+  }
+
+  .review__input {
+    padding-right: 59px;
   }
 
   .review__input--name {
@@ -94,18 +105,26 @@
     padding-left: 21px;
   }
 
+  .review__text {
+    padding-left: 60px;
+  }
+
   .review__info {
     width: 50%;
+    order: -1;
   }
 
   .review__button {
     width: 324px;
     margin-left: 60px;
+    margin-bottom: 97px;
   }
 
   .review__necessarily {
     padding-left: 150px;
     padding-bottom: 97px;
+    text-transform: uppercase;
+    color: $greydark;
   }
 }
 

@@ -9,7 +9,7 @@
 }
 
 .features__title {
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: $white;
@@ -58,10 +58,20 @@
   .features__header,
   .features__header-second {
     padding: 40px 32px 44px;
+    flex-basis: 256px;
+    flex-shrink: 0;
+  }
+
+  .features__title {
+    font-size: 21px;
   }
 
   .features__header-second {
     order: 2;
+  }
+
+  .features__description {
+    font-size: 14px;
   }
 
   .features-content__list {

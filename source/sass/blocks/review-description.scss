@@ -23,6 +23,10 @@
 
 
 @media (min-width: 768px) {
+  .review-description__info {
+    margin: 0;
+  }
+
   .review-description__info label {
     font-size: 21px;
     padding-left: 243px;

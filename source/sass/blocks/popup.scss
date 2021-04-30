@@ -57,3 +57,32 @@
   background-color: $lightgrey;
   margin: 20px;
 }
+
+@media (min-width: 768px) {
+  .popup__button--error {
+    width: 272px;
+    height: 58px;
+    margin: 0 0 49px 0;
+  }
+
+  .popup__button-wrapper-submit {
+    margin: 0 64px 0 64px;
+    width: 640px;
+    height: 146px;
+    text-align: center;
+    padding-top: 44px;
+  }
+
+  .popup__button-wrapper-error {
+    margin: 0 64px 0 64px;
+    text-align: center;
+    padding-top: 18px;
+    background-color: $white;
+  }
+}
+
+@media (min-width: 1200px) {
+  .popup__button-wrapper-submit {
+    margin-left: 279px;
+  }
+}

@@ -32,10 +32,16 @@
 @media (min-width: 768px) {
   .review-radio {
     width: 50%;
-    order: -1;
+    order: -2;
   }
 
   .review-radio__title {
     font-size: 21px;
+    padding: 0 0 0 56px;
+    margin: 0 0 73px 0;
+  }
+
+  .review-radio__list {
+    padding-left: 60px;
   }
 }
