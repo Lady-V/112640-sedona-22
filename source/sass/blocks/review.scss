@@ -129,6 +129,26 @@
 }
 
 @media (min-width: 1200px) {
+  .review__subtitle {
+    margin: 0 0 73px 0;
+  }
+
+  .review__input--name {
+    width: 350px;
+  }
+
+  .review__input--surname {
+    width: 312px;
+  }
+
+  .review__input--patronymic {
+    width: 314px;
+  }
+
+  .review__filter {
+    margin-bottom: 52px;
+  }
+
   .review__button {
     width: 480px;
     margin-left: 120px;

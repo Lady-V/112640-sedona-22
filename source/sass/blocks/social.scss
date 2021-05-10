@@ -18,6 +18,15 @@
   justify-content: center;
 }
 
+.social__link:hover {
+  background-color: $middleblue;
+}
+
+.social__link:active {
+  background-color: $darkblue;
+  fill: $white;
+}
+
 @media (min-width: 768px) {
   .social__list {
     margin: 0 0 0 54px;

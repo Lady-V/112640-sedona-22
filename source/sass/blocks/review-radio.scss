@@ -1,38 +1,86 @@
+.review-radio {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
 .review-radio__title {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: $black;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 37px;
-}
-
-.review-radio__item label {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  color: $black;
 }
 
 .review-radio__list {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-left: 20px;
+  padding-left: 10px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  margin-bottom: 20px;
 }
 
-.review-radio__list li:not(:last-child) {
-  margin-bottom: 43px;
+.review-radio__item {
+  margin-bottom: 13px;
+}
+
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.review-radio__check {
+  display: none;
+}
+
+.review-radio__text {
+  position: relative;
+  display: block;
+  padding-left: 75px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 56px;
+  text-align: left;
+  color: $black;
+  text-transform: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.review-radio__check:checked+.review-radio__text::before {
+  background-color: $greydark;
+}
+
+.review-radio__text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 56px;
+  height: 56px;
+  background-color: $lightgrey;
+  border: 18px solid $lightgrey;
+  border-radius: 50%;
 }
 
 @media (min-width: 768px) {
   .review-radio {
     width: 50%;
     order: -2;
+    border-right: 1px solid $middlegrey;
   }
 
   .review-radio__title {
@@ -43,5 +91,15 @@
 
   .review-radio__list {
     padding-left: 60px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .review-radio__list {
+    padding-left: 128px;
+  }
+
+  .review-radio__item {
+    margin-bottom: 52px;
   }
 }

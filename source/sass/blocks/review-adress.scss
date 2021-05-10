@@ -1,3 +1,12 @@
+.review-adress {
+  border-bottom: 28px;
+  border: 1px solid $middlegrey;
+}
+
+.review-adress__wrapper {
+  position: relative;
+}
+
 .review-adress__title {
   font-size: 18px;
   line-height: 26px;
@@ -30,10 +39,43 @@
   color: $black;
 }
 
+.review-adress__icon {
+  width: 58px;
+  height: 58px;
+  background: $middlegreygrey;
+  right: 20px;
+  top: 40px;
+}
+
+.review-adress__icon,
+.review-adress__icon::after {
+  display: inline;
+  position: absolute;
+}
+
+.review-adress__icon--phone::after {
+  content: url("../img/phone-icon.svg");
+  width: 18px;
+  height: 18px;
+}
+
+.review-adress__icon--mail::after {
+  content: url("../img/mail-icon.svg");
+  width: 16px;
+  height: 12px;
+}
+
+.review-adress__icon::after {
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 25%;
+}
+
 @media (min-width: 768px) {
   .review-adress {
     width: 100%;
     margin: 32px 0 14px;
+    border-top: 1px solid $middlegreygrey;
   }
 
   .review-adress__title {
@@ -43,10 +85,17 @@
 
   .review-adress__text {
     padding-bottom: 8px;
+    padding-left: 82px;
   }
 
   .review-adress input {
     width: 648px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+  .review-adress__icon {
+    right: 60px;
   }
 }
 
@@ -57,20 +106,33 @@
     width: 100%;
   }
 
+  .review-adress__text-number {
+    padding-left: 119px;
+  }
+
+  .review-adress__text-mail {
+    padding-left: 119px;
+  }
+
   .review-adress__number {
     margin: 0;
   }
 
   .review-adress__mail {
     margin: 0;
-    padding-left: 256px;
   }
 
   .review-adress input {
     width: 257px;
+    margin: 0;
   }
 
   .review-adress__input--mail {
     width: 258px;
+  }
+
+  .review-adress__icon {
+    right: -57px;
+    top: 0;
   }
 }

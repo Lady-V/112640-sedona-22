@@ -21,7 +21,6 @@
   padding-top: 13px;
 }
 
-
 @media (min-width: 768px) {
   .review-description__info {
     margin: 0;
@@ -49,5 +48,6 @@
   .review-description__info textarea {
     width: 960px;
     margin-left: 120px;
+    margin-right: 120px;
   }
 }

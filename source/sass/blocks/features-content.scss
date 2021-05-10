@@ -10,21 +10,95 @@
   text-transform: uppercase;
 }
 
+.features-content__item {
+  position: relative;
+  text-align: left;
+  min-height: 0;
+  padding: 8px 21px 8px 70px;
+}
+
+.features-content__item::before {
+  content: "";
+  position: absolute;
+  width: 35px;
+  left: 25px;
+  top: 15px;
+}
+
+.features-content__item--home::before {
+  content: url("../img/icon-house.svg");
+}
+
+.features-content__item--gift::before {
+  content: url("../img/icon-gift.svg");
+}
+
+.features-content__item--burger::before {
+  content: url("../img/icon-burger.svg");
+}
+
 .features-content__title {
-  font-size: 21px;
-  line-height: 15px;
+  font-size: 18px;
+  line-height: 26px;
   font-weight: 700;
 }
 
+.features-content__item--home {
+  margin-top: 35px;
+}
+
+.features-content__title:not(:first-child) {
+  margin: 26px 0 0 0;
+}
+
 .features-content__description {
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 21px;
   font-weight: 400;
 }
 
 @media (min-width: 768px) {
   .features-content__list {
     display: flex;
+  }
+
+  .features-content__title {
+    font-size: 21px;
+  }
+
+  .features-content__description {
+    font-size: 14px;
+  }
+
+  .features-content__item--home {
+    margin: 0 73px 60px 36px;
+  }
+
+  .features-content__item--burger {
+    margin: 0 70px 59px 0;
+  }
+
+  .features-content__item--gift {
+    margin: 0 31px 81px 0;
+  }
+
+  .features-content__item::before {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 66px;
+    width: 70px;
+  }
+
+  .features-content__item--home::before {
+    content: url("../img/icon-house-tablet.svg");
+  }
+
+  .features-content__item--burger::before {
+    content: url("../img/icon-burger-tablet.svg");
+  }
+
+  .features-content__item--gift::before {
+    content: url("../img/icon-gift-tablet.svg");
   }
 
   .features-content__item:nth-child(2) {
@@ -34,6 +108,11 @@
   .features-content__item:nth-child(3) {
     order: 2;
   }
+
+  .features-content__item {
+    padding: 158px 0 0 0;
+    text-align: center;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -42,8 +121,18 @@
     padding-right: 78px;
   }
 
-  .features-content__item {
-    padding-top: 159px;
-    padding-bottom: 80px;
+  .features-content__item--home {
+    margin: 0 104px 0 58px;
+    padding: 159px 0 80px 0;
+  }
+
+  .features-content__item--burger {
+    margin: 0 121px 0 0;
+    padding: 157px 0 81px 0;
+  }
+
+  .features-content__item--gift {
+    margin: 0 78px 0 0;
+    padding: 158px 0 80px 0;
   }
 }

@@ -9,17 +9,56 @@
 }
 
 .review-checkbox__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 0;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  padding-left: 20px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
 }
 
-.review-checkbox__list li:not(:last-child) {
-  margin-bottom: 54px;
+.review-checkbox__item {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.review-checkbox__check {
+  display: none;
+}
+
+.review-checkbox__text {
+  position: relative;
+  display: block;
+  padding-left: 80px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 56px;
+  text-align: left;
+  color: $black;
+  text-transform: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.review-checkbox__check:checked+.review-checkbox__text::before {
+  background: $lightgrey url("../img/icon-tick.svg") no-repeat 50% 50%;
+}
+
+.review-checkbox__text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 56px;
+  height: 56px;
+  background-color: $lightgrey;
+  border: none;
+  border-radius: 5px;
 }
 
 @media (min-width: 768px) {
@@ -53,6 +92,9 @@
 
   .review-checkbox__item {
     width: 100%;
-    padding-left: 54px;
+  }
+
+  .review-checkbox__title {
+    padding: 52px 445px 47px 447px;
   }
 }

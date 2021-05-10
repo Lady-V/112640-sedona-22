@@ -1,3 +1,37 @@
+.banner__wrapper {
+  position: relative;
+  width: 100%;
+  background-image: url("../img/back-mobile.jpg");
+  background-color: $lightblue;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner__text {
+  padding-top: 90px;
+  padding-bottom: 83px;
+  display: block;
+  margin: 0 auto;
+  width: 282px;
+  height: 214px;
+}
+
+.banner__wrapper::after {
+  content: "";
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  height: 27px;
+  background-image: url("../img/intro-triangle.svg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 322px 27px;
+  background-position-x: -1px;
+}
+
 @media (min-width: 768px) {
   .banner__image {
     width: 100%;

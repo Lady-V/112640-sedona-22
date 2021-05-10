@@ -11,6 +11,19 @@
   text-transform: uppercase;
 }
 
+.copyright__link svg {
+  fill: $black;
+}
+
+.copyright__link svg:hover {
+  fill: $lightblue;
+}
+
+.copyright__link svg:active {
+  fill: $black;
+  opacity: 0.3;
+}
+
 @media (min-width: 768px) {
   .copyright__info {
     margin: 0 60px 0 0;
